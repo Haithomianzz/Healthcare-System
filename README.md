@@ -24,7 +24,8 @@ Follow these instructions to set up the project on your local machine for develo
 
 Ensure you have the following installed:
 
-- **Java Development Kit (JDK)**: Version 8 or higher.
+- **Java Development Kit (JDK)**: Version 8 or higher (JDK 8+ Requires seperate JFX Library as deprecated).
+- **JDBC**: Java Database Connector Library.
 - **Apache Maven**: For dependency management and building the project.
 - **MySQL**: Database to store application data.
 
@@ -47,52 +48,10 @@ Ensure you have the following installed:
    - Create a MySQL database named `healthcare_system`.
    - Update the database configuration in `src/main/resources/application.properties` with your MySQL credentials.
 
-4. **Build the Project**:
-
-   ```bash
-   mvn clean install
-   ```
-
-5. **Run the Application**:
-
-   ```bash
-   mvn spring-boot:run
-   ```
-
-## Usage
-
-Once the application is running:
-
-- Access the web interface at `http://localhost:8080`.
-- Use the navigation menu to manage patients, appointments, and medical records.
-- Refer to the user manual in the `docs` directory for detailed instructions.
-
-## Running the Tests
-
-To execute automated tests:
-
-```bash
-mvn test
-```
-
-## Deployment
-
-For deployment on a live system:
-
-1. **Build the Application**:
-
-   ```bash
-   mvn package
-   ```
-
-2. **Deploy the Generated WAR/JAR File**:
-
-   - Deploy the `target/healthcare-system.jar` to your server.
-   - Ensure the server environment matches the prerequisites.
-
 ## Built With
 
-- **Spring Boot**: Framework for building Java-based web applications.
+- **JavaFX**: Framework for building Java-based applications.
+- **JDBC**: Database connector for Java applications with MySQL dependancy.
 - **MySQL**: Relational database management system.
 - **Maven**: Dependency management and build automation tool.
 
